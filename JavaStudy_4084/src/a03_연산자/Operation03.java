@@ -13,7 +13,14 @@ public class Operation03 {
 			boolean result2 = num1 > num2 ? true : false;
 			System.out.println(result2);
 			
-			
+			int score = 85;
+			char grade = score > -1 && score < 101 ?
+					score > 89 ? 'A' :
+					score > 79 ? 'B' :
+					score > 69 ? 'C' :
+					score > 59 ? 'D' :
+					score > -1 ? 'F' : ' ' : 'X'; // X가 두번 들어가는거는 앞에 진실 뒤에 거짓 -  true : false
+					System.out.println(grade);
 			
 
 		}
