@@ -1,6 +1,7 @@
 package a09_클래스_정보은닉;
 
-public class Encapsulation {
+public class Encapsulation { 
+	// private의 값은 다른 클래스에서 사용을 못하기에 get, set를 통해 만들어야한다.
 	private String username; //아이디
 	private String password; //비밀번호
 	private String provider; //서비스회사 google, kakao, naver
@@ -30,12 +31,30 @@ public class Encapsulation {
 		return username;
 	}
 	
+	// getter
+	// public  / 알트 + 쉬프트 + s = 겟터 셋터
 	
 	
 	public void showInfo() {
 		System.out.println(username);
 		System.out.println(password);
 		System.out.println(provider);
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getProvider() {
+		return provider;
+	}
+
+	public void setProvider(String provider) {
+		this.provider = provider;
 	}
 	
 	
