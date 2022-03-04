@@ -49,6 +49,14 @@ public class ArrayTest {
 			System.out.println(kor[i]);
 		
 		}
+		
+		int[] numArray = {1, 5, 4, 3, 2, 6, 9}; // 값이 적을때, Test할때 사용
+		int[] numArray2 = new int[100]; // 많은 공간
+		
+		for(int i = 0; i < numArray.length; i++) {
+			System.out.println(numArray[i]);
+			
+		}
 
 	}
 }
