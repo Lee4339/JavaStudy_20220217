@@ -34,7 +34,7 @@ public class InputImpl implements Input {
 	@Override
 	public String typedUsername(Scanner scanner) {
 		System.out.println("아이디로 회원 조회");
-		System.out.println("회원아이디: ");
+		System.out.print("회원아이디: ");
 		
 		return scanner.nextLine();
 	}
